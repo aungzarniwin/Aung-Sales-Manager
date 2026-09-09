@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aung Sales Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="logo">
+      <div class="logo-icon">A</div>
+      <h1>Aung Sales Manager</h1>
+      <p>Smart Sales Management</p>
+    </div>
+
+    <div class="card">
+
+      <div class="tabs">
+        <button id="loginTab" class="tab active" onclick="showLogin()">
+          Login
+        </button>
+
+        <button id="signupTab" class="tab" onclick="showSignup()">
+          Sign Up
+        </button>
+      </div>
+
+      <!-- LOGIN -->
+      <div id="loginForm">
+
+        <h2>Welcome Back 👋</h2>
+        <p class="subtitle">Login to your Sales Manager</p>
+
+        <label>Username</label>
+        <input
+          type="text"
+          id="loginUsername"
+          placeholder="Enter username"
+        >
+
+        <label>Password</label>
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Enter password"
+        >
+
+        <button class="main-btn" onclick="login()">
+          Login
+        </button>
+
+      </div>
+
+      <!-- SIGN UP -->
+      <div id="signupForm" class="hidden">
+
+        <h2>Create Account 🚀</h2>
+        <p class="subtitle">Start your 7-Day FREE Trial</p>
+
+        <label>Full Name</label>
+        <input
+          type="text"
+          id="signupName"
+          placeholder="Enter your name"
+        >
+
+        <label>Username</label>
+        <input
+          type="text"
+          id="signupUsername"
+          placeholder="Create username"
+        >
+
+        <label>Password</label>
+        <input
+          type="password"
+          id="signupPassword"
+          placeholder="Create password"
+        >
+
+        <button class="main-btn" onclick="signup()">
+          Start 7-Day FREE Trial
+        </button>
+
+        <div class="trial-box">
+          🎁 <strong>7 Days FREE</strong>
+          <br>
+          Full Professional Features
+        </div>
+
+      </div>
+
+      <p id="message"></p>
+
+    </div>
+
+    <footer>
+      © 2026 Aung Sales Manager
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
